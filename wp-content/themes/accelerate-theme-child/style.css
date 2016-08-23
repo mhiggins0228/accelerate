@@ -14,8 +14,19 @@
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
 #masthead {
-    background: none repeat scroll 0 0 #45ac9d;
+    background: none repeat scroll 0 0 #45ac9d;    
 
+}
+/*style masthead*/
+.menu-masthead-container ul li{
+  text-transform: uppercase;
+  font-size: 15px;
+	display: inline-block;
+	margin-left: 35px;
+}
+
+.menu-masthead-container ul li:first-of-type{
+	margin-left: 0;
 }
 .button {
     background: none repeat scroll 0 0 #45ac9d;
@@ -110,3 +121,12 @@
 	display: inline-block;
 	margin-left: 35px;
 }
+
+
+.page-about-header {
+    padding: 444px;
+    margin: 0 7px 2px 0;
+    display: inline;
+    float: left;
+}
+

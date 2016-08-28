@@ -22,6 +22,10 @@ get_header(); ?>
 				$services_3_image = get_field ('services_3_image');
 				$services_4_image = get_field ('services_4_image');
 				
+				$services_1_text = get_field ('services_1_text');
+				$services_2_text = get_field ('services_2_text');
+				$services_3_text = get_field ('services_3_text');
+				$services_4_text = get_field ('services_4_text');
 				?> 
 			
 			<article class = "case-study">
@@ -41,7 +45,14 @@ get_header(); ?>
 					<img src="<?php echo $services_3_image; ?>" />
 					<img src="<?php echo $services_4_image; ?>" />
 				
-				</div>			
+				</div>		
+				<div class="about-text">
+					<img src="<?php echo $services_1_text; ?>" />
+					<img src="<?php echo $services_2_text; ?>" />
+					<img src="<?php echo $services_3_text; ?>" />
+					<img src="<?php echo $services_4_text; ?>" />
+				
+				</div>		
 			<?php endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->

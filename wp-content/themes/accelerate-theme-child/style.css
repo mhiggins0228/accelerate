@@ -78,6 +78,7 @@
     color: #808080;
     min-width: 220px;
     font-weight: 200;
+    float: none;
 }
 
 /* messages label */
@@ -99,10 +100,11 @@
 
 /* email input field */
 #ninja_forms_field_2 {
-    width: 40%;
+    width: 20%;
     min-width: 285px;
     height: 35px;	
-    float: right;
+    margin: auto;
+    
 }
 
 /* button */

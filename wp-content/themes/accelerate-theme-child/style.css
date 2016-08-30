@@ -125,10 +125,85 @@
 }
 
 
-.page-about-header {
+.single-case_studies-footer {
     padding: 444px;
     margin: 0 7px 2px 0;
     display: inline;
     float: left;
 }
+/*about page*/
+aboutpage {
+    background: url("img/taxi-photo.jpg") no-repeat scroll left bottom / cover rgba(0, 0, 0, 0);
+    height: 200px;
+    margin: 0 0 40px;
+    padding: 70px 0;
+}
 
+.aboutpage-hero p {
+	color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.service-content {
+    width: 800px;
+    margin: auto ;
+}
+
+.service-section {
+    clear: both;
+    overflow: hidden;
+}
+
+.our-services h6 {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.our-services p {
+    text-align: center;
+}
+
+.service-description {
+    float: left;
+    width: 70%;
+}
+
+.service-image {
+    width: 25%;
+    margin-top: 40px;
+}
+
+.service-section:nth-child(odd) .service-image {
+    float: left;
+}
+
+.service-section:nth-child(even) .service-image {
+    float: right;
+}
+
+
+/* button section styles */
+
+.about-contact-us {
+    width: 960px;
+	margin: auto;
+	padding: 0 10px;
+    clear: both;
+    border-top: 1px dotted #e3e1e1;
+}
+
+.about-contact-us p {
+    text-align: center;
+    font-weight: bold;
+    margin: 40px 40px;
+    font-size: 20px;
+    
+}
+.about-contact-us a.button {
+    background-color: #45ac9d;
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 14px;
+}

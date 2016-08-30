@@ -21,6 +21,8 @@ get_header(); ?>
 					<h2><?php _e( 'What is your major malfunction?!?!', '404' ); ?></h2>
 					<p><?php _e( 'I order you to search!', '404' ); ?></p>
 					
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/skillcrush-404-image.png"/>
+					
 					<?php get_search_form(); ?>
 				</div><!-- .page-content -->
 			</div><!-- .page-wrapper -->

@@ -31,7 +31,10 @@ get_header(); ?>
 			<article class = "case-study">
 				<aside class = "case-study-sidebar">
 				<h2><?php the_title(); ?></h2> 	
-				<h5><?php echo $services; ?></h5>
+				<h5><?php echo $services_1_text; ?></h5>
+				<h5><?php echo $services_2_text; ?></h5>
+				<h5><?php echo $services_3_text; ?></h5>
+				<h5><?php echo $services_4_text; ?></h5>
 	
 							
 				<?php the_content(); ?>
@@ -46,13 +49,7 @@ get_header(); ?>
 					<img src="<?php echo $services_4_image; ?>" />
 				
 				</div>		
-				<div class="about-text">
-					<img src="<?php echo $services_1_text; ?>" />
-					<img src="<?php echo $services_2_text; ?>" />
-					<img src="<?php echo $services_3_text; ?>" />
-					<img src="<?php echo $services_4_text; ?>" />
-				
-				</div>		
+					
 			<?php endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->

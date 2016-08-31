@@ -15,26 +15,56 @@
 get_header(); ?>
 
 	<div id="primary" class="site-content">
-		<div id="content" role="main">
-			<?php while ( have_posts() ) : the_post(); 
-			 	$services_1_image = get_field ('services_1_image');
-				$services_2_image = get_field ('services_2_image');
-				$services_3_image = get_field ('services_3_image');
-				$services_4_image = get_field ('services_4_image');
-				
-				$services_1_text = get_field ('services_1_text');
-				$services_2_text = get_field ('services_2_text');
-				$services_3_text = get_field ('services_3_text');
-				$services_4_text = get_field ('services_4_text');
-				?> 
-			
+	<div id="content" role="main">
+
+
 			<article class = "case-study">
 				<aside class = "case-study-sidebar">
 				<h2><?php the_title(); ?></h2> 	
-				<h5><?php echo $services_1_text; ?></h5>
-				<h5><?php echo $services_2_text; ?></h5>
-				<h5><?php echo $services_3_text; ?></h5>
-				<h5><?php echo $services_4_text; ?></h5>
+				
+					<?php while ( have_posts() ) : the_post(); 
+			
+	 	
+				<h5><?php echo $services; ?></h5>
+					  <section class="about-section">
+                        <figure class="service-image align-left">
+                                <?php echo wp_get_attachment_image( $services_1_image, $size ); ?>
+                        </figure>
+                        <div class="service-description">
+                                <h2><?php echo $services_1_title; ?></h2>
+                                <p><?php echo $services_1_description; ?></p>
+                        </div>
+                </section>
+
+                <section class="about-section">
+                        <figure class="service-image align-right">
+                                <?php echo wp_get_attachment_image( $services_2_image, $size ); ?>
+                        </figure>
+                        <div class="service-description">
+                                <h2><?php echo $services_2_title; ?></h2>
+                                <p><?php echo $services_2_description; ?></p>
+                        </div>
+                </section>
+                    
+                <section class="about-section">
+                        <figure class="service-image align-right">
+                                <?php echo wp_get_attachment_image( $services_3_image, $size ); ?>
+                        </figure>
+                        <div class="service-description">
+                                <h2><?php echo $services_3_title; ?></h2>
+                                <p><?php echo $services_3_description; ?></p>
+                        </div>
+                </section>
+                
+                    <section class="about-section">
+                        <figure class="service-image align-right">
+                                <?php echo wp_get_attachment_image( $services_4_image, $size ); ?>
+                        </figure>
+                        <div class="service-description">
+                                <h2><?php echo $services_4_title; ?></h2>
+                                <p><?php echo $services_4_description; ?></p>
+                        </div>
+                </section>
 	
 							
 				<?php the_content(); ?>
@@ -42,17 +72,12 @@ get_header(); ?>
 				<p><a href ="<?php echo $link; ?>">Site Link</a></p> 
 				</aside>
 				
-				<div class="about-images">
-					<img src="<?php echo $services_1_image; ?>" />
-					<img src="<?php echo $services_2_image; ?>" />
-					<img src="<?php echo $services_3_image; ?>" />
-					<img src="<?php echo $services_4_image; ?>" />
-				
-				</div>		
-					
-			<?php endwhile; // end of the loop. ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
-
+						
+<?php endwhile; // end of the loop. ?>
+			
+		
+	
+		
+</div><!-- #content -->
+</div><!-- #primary -->
 <?php get_footer(); ?>

@@ -23,9 +23,20 @@ get_header(); ?>
 				<h2><?php the_title(); ?></h2> 	
 				
 					<?php while ( have_posts() ) : the_post(); 
-			
+					$services_1_image= get_field('services 1 image');
+					$services_1_title= get_field('services 1 title')
+					$services_1_description= get_field('services 1 description');
+					$services_2_image= get_field('services 2 image');
+					$services_2_title= get_field('services 2 title');	
+					$services_2_description= get_field('services 2 description');
+					$services_3_image= get_field('services 3 image');
+					$services_3_title= get_field('services 3 title');
+					$services_3_description= get_field('services 3 description');
+					$services_4_image= get_field('services 4 image');
+					$services_4_title= get_field('services 4 title');
+					$services_4_description= get_field('services 4 description'); ?>
 	 	
-				<h5><?php echo $services; ?></h5>
+	
 					  <section class="about-section">
                         <figure class="service-image align-left">
                                 <?php echo wp_get_attachment_image( $services_1_image, $size ); ?>

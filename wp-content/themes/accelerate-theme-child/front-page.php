@@ -26,8 +26,11 @@ get_header(); ?>
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- .container -->
 </section><!-- .home-page -->
+<section class="apss-social-share">
+</section>
 
 <section class = "featured-work">
+
 <div class= "site-content">
 
 	<h4>Featured Work</h4>
